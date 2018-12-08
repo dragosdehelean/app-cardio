@@ -28,22 +28,23 @@ class App extends Component {
   }
 
   handleRemovePlayer = id => {
-    this.setState(prevState => {
-      return {
-        players: prevState.players.filter(p => p.id !== id)
-      };
-    });
+    this.setState(
+      {      
+        // Exercitiul 3: obtineti valoarea corecta pentru noul array players
+        players: this.state.players
+      }
+    );
   };
 
   handleAddPlayer = name => {
     
-    // Genereaza un id nou, mai mare cu 1 fata de cel mai mare id din players,
+    // Exercitiul 
     // indiferent de cum evolueaza players  
-    const genUniqIncrId = () => 1 + Math.max(...this.state.players.map(player => player.id));    
+        
 
-    this.setState(prevState => ({
-      players: [...prevState.players, { name, id: genUniqIncrId(), score: 0 }]
-    }));
+    this.setState({
+      players: this.state.players
+    });
   };
   
   render() {

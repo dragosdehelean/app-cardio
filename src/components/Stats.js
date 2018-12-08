@@ -2,8 +2,13 @@ import React from "react";
 
 const Stats = props => {
 
-  const totalScore = props.players.reduce((acc, player) => acc += player.score, 0);
-  const totalPlayers = props.players.length;
+
+  // Exercitiul 1: obtineti valoarea corecta pentru totalPlayers
+  const totalPlayers = 1;
+
+  // Exercitiul 2: obtineti valoarea corecta pentru totalScore
+  const totalScore = 2; 
+  
 
   return (
     <table className="stats">
