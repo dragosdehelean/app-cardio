@@ -38,10 +38,12 @@ class App extends Component {
 
   handleAddPlayer = name => {
     
-    // Exercitiul 
-    // indiferent de cum evolueaza players  
-        
-
+    // Exercitiul 5 Creati o functie genUniqIncrId 
+    // care genereaza un id nou, mai mare cu 1 fata de cel mai mare id din players,
+    // indiferent de cum evolueaza players 
+    
+    
+     // Exercitiul 4: adaugati un nou player cu numele primit, score default 0 si un id default ex "6" 
     this.setState({
       players: this.state.players
     });
